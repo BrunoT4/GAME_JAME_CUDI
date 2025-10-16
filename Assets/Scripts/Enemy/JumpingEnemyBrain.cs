@@ -16,8 +16,8 @@ public class JumpingEnemyBrain : MonoBehaviour
 
     [Header("Wind-Up & Cooldown")]
     [SerializeField] private float windupTime = 0.15f;    // crouch before hop
-    [SerializeField] private float minHopCooldown = 0.65f;
-    [SerializeField] private float maxHopCooldown = 1.10f;
+    [SerializeField] private float minHopCooldown = 1.5f;
+    [SerializeField] private float maxHopCooldown = 2.0f;
 
     [Header("Grounding")]
     [SerializeField] private Transform groundCheck;       // child at feet
