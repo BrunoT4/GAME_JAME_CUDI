@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer bodyRenderer; // assign your sprite here in the inspector
     private bool isNightForm = false;
 
-    [SerializeField] private bool startAsNightForm = false;
+    [SerializeField] private bool startAsNightForm = true;
 
     [SerializeField] private FormType formType = FormType.Light;
 
