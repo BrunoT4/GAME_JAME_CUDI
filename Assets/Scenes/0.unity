@@ -1121,6 +1121,11 @@ MonoBehaviour:
   - {fileID: 2997829534913359608, guid: a4b74f8550bab4dbfa16dfef185d84bb, type: 3}
   - {fileID: 3870023925448114044, guid: abbe00940d65346a5aa79e414ffd71cc, type: 3}
   - {fileID: 2132474533967778914, guid: 0bc502642fe5946b3b9c647511f19e62, type: 3}
+  baseScoreForScaling: 10000
+  intervalMultiplierPerLevel: 0.95
+  minSpawnInterval: 0.35
+  levelsPerExtraSpawn: 2
+  maxExtraSpawns: 10
 --- !u!4 &1095092707
 Transform:
   m_ObjectHideFlags: 0
