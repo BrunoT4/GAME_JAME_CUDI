@@ -1,0 +1,2639 @@
+fileFormatVersion: 2
+guid: b4355351e1a1b43f28b0232359ccc3e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4118115637621237113
+    second: Copy of Untitled drawing_0
+  - first:
+      213: 5949177914534695350
+    second: Copy of Untitled drawing_1
+  - first:
+      213: 832333394961067404
+    second: Copy of Untitled drawing_2
+  - first:
+      213: 4630530886490856723
+    second: Copy of Untitled drawing_3
+  - first:
+      213: -8915311046280842747
+    second: Copy of Untitled drawing_4
+  - first:
+      213: 7413223557976160627
+    second: Copy of Untitled drawing_5
+  - first:
+      213: -6161337691286795182
+    second: Copy of Untitled drawing_6
+  - first:
+      213: 2179497656378964644
+    second: Copy of Untitled drawing_7
+  - first:
+      213: -5681279730275796667
+    second: Copy of Untitled drawing_8
+  - first:
+      213: 7921106234016571437
+    second: Copy of Untitled drawing_9
+  - first:
+      213: 2162744664857356290
+    second: Copy of Untitled drawing_10
+  - first:
+      213: 9130523691883228755
+    second: Copy of Untitled drawing_11
+  - first:
+      213: -4608389385258291337
+    second: Copy of Untitled drawing_12
+  - first:
+      213: -7721266510041878214
+    second: Copy of Untitled drawing_13
+  - first:
+      213: -3574549867576751050
+    second: Copy of Untitled drawing_14
+  - first:
+      213: 572153621637521784
+    second: Copy of Untitled drawing_15
+  - first:
+      213: -8944389981078612379
+    second: Copy of Untitled drawing_16
+  - first:
+      213: -8567485490460461219
+    second: Copy of Untitled drawing_17
+  - first:
+      213: 3856400964073583890
+    second: Copy of Untitled drawing_18
+  - first:
+      213: -8827010119840848996
+    second: Copy of Untitled drawing_19
+  - first:
+      213: 295973487781739165
+    second: Copy of Untitled drawing_20
+  - first:
+      213: 4879791285668055826
+    second: Copy of Untitled drawing_21
+  - first:
+      213: -3335192050324652067
+    second: Copy of Untitled drawing_22
+  - first:
+      213: 1343886143089720982
+    second: Copy of Untitled drawing_23
+  - first:
+      213: -8003075777357773988
+    second: Copy of Untitled drawing_24
+  - first:
+      213: 3621178928469024268
+    second: Copy of Untitled drawing_25
+  - first:
+      213: -840974313462033984
+    second: Copy of Untitled drawing_26
+  - first:
+      213: -6633279298152690187
+    second: Copy of Untitled drawing_27
+  - first:
+      213: -8816760996604994125
+    second: Copy of Untitled drawing_28
+  - first:
+      213: -5731596127265609764
+    second: Copy of Untitled drawing_29
+  - first:
+      213: -8722422379875351751
+    second: Copy of Untitled drawing_30
+  - first:
+      213: -1802257662431641333
+    second: Copy of Untitled drawing_31
+  - first:
+      213: -8122070428720643414
+    second: Copy of Untitled drawing_32
+  - first:
+      213: -9081693772010158578
+    second: Copy of Untitled drawing_33
+  - first:
+      213: 3522898435063476584
+    second: Copy of Untitled drawing_34
+  - first:
+      213: -3314366066897229582
+    second: Copy of Untitled drawing_35
+  - first:
+      213: -4967874582583225014
+    second: Copy of Untitled drawing_36
+  - first:
+      213: 8989321328413291712
+    second: Copy of Untitled drawing_37
+  - first:
+      213: 338789315454769896
+    second: Copy of Untitled drawing_38
+  - first:
+      213: 2381694589007786112
+    second: Copy of Untitled drawing_39
+  - first:
+      213: -2162511866443811148
+    second: Copy of Untitled drawing_40
+  - first:
+      213: 5342194493458557180
+    second: Copy of Untitled drawing_41
+  - first:
+      213: 8652130254575695140
+    second: Copy of Untitled drawing_42
+  - first:
+      213: -2547237449248428565
+    second: Copy of Untitled drawing_43
+  - first:
+      213: 6076337575290001468
+    second: Copy of Untitled drawing_44
+  - first:
+      213: 6613972250455499490
+    second: Copy of Untitled drawing_45
+  - first:
+      213: -2799823176533952314
+    second: Copy of Untitled drawing_46
+  - first:
+      213: -4912504141830828502
+    second: Copy of Untitled drawing_47
+  - first:
+      213: 7034670861326957873
+    second: Copy of Untitled drawing_48
+  - first:
+      213: -2197975665760566071
+    second: Copy of Untitled drawing_49
+  - first:
+      213: -8002458383949025106
+    second: Copy of Untitled drawing_50
+  - first:
+      213: 3681543194198257003
+    second: Copy of Untitled drawing_51
+  - first:
+      213: -1075437876746546476
+    second: Copy of Untitled drawing_52
+  - first:
+      213: 1174306144353190881
+    second: Copy of Untitled drawing_53
+  - first:
+      213: 5537481516584797034
+    second: Copy of Untitled drawing_54
+  - first:
+      213: 4343516794722085995
+    second: Copy of Untitled drawing_55
+  - first:
+      213: 1294828059625879596
+    second: Copy of Untitled drawing_56
+  - first:
+      213: 6192668471132786095
+    second: Copy of Untitled drawing_57
+  - first:
+      213: 5111487992250073275
+    second: Copy of Untitled drawing_58
+  - first:
+      213: 2804916387657317995
+    second: Copy of Untitled drawing_59
+  - first:
+      213: 3780260844138534919
+    second: Copy of Untitled drawing_60
+  - first:
+      213: -3215570850071654825
+    second: Copy of Untitled drawing_61
+  - first:
+      213: -1179480289877109523
+    second: Copy of Untitled drawing_62
+  - first:
+      213: -5131284765735272943
+    second: Copy of Untitled drawing_63
+  - first:
+      213: -5118751706159316590
+    second: Copy of Untitled drawing_64
+  - first:
+      213: -8661340438618769495
+    second: Copy of Untitled drawing_65
+  - first:
+      213: -5751940723592093166
+    second: Copy of Untitled drawing_66
+  - first:
+      213: -2885022172850810490
+    second: Copy of Untitled drawing_67
+  - first:
+      213: -5008214770129548644
+    second: Copy of Untitled drawing_68
+  - first:
+      213: -136850287422989882
+    second: Copy of Untitled drawing_69
+  - first:
+      213: -1579341387007779987
+    second: Copy of Untitled drawing_70
+  - first:
+      213: -5197481290704126406
+    second: Copy of Untitled drawing_71
+  - first:
+      213: 7111804639750288164
+    second: Copy of Untitled drawing_72
+  - first:
+      213: 1001035199911819086
+    second: Copy of Untitled drawing_73
+  - first:
+      213: -2231692685004499524
+    second: Copy of Untitled drawing_74
+  - first:
+      213: -5037027672165473461
+    second: Copy of Untitled drawing_75
+  - first:
+      213: 6695851950664844290
+    second: Copy of Untitled drawing_76
+  - first:
+      213: 8233681491866723374
+    second: Copy of Untitled drawing_77
+  - first:
+      213: -2227217857249674032
+    second: Copy of Untitled drawing_78
+  - first:
+      213: -460325771441369051
+    second: Copy of Untitled drawing_79
+  - first:
+      213: 8289219305178069186
+    second: Copy of Untitled drawing_80
+  - first:
+      213: -439771014256289158
+    second: Copy of Untitled drawing_81
+  - first:
+      213: -2003428960874870863
+    second: Copy of Untitled drawing_82
+  - first:
+      213: -1764979596747976438
+    second: Copy of Untitled drawing_83
+  - first:
+      213: 3204546143108164525
+    second: Copy of Untitled drawing_84
+  - first:
+      213: 6964637793263134509
+    second: Copy of Untitled drawing_85
+  - first:
+      213: 4696007732947777793
+    second: Copy of Untitled drawing_86
+  - first:
+      213: 1536134222885083456
+    second: Copy of Untitled drawing_87
+  - first:
+      213: -2370106294440111301
+    second: Copy of Untitled drawing_88
+  - first:
+      213: -3361711899735821801
+    second: Copy of Untitled drawing_89
+  - first:
+      213: 2538317583185455793
+    second: Copy of Untitled drawing_90
+  - first:
+      213: 8756263946214024634
+    second: Copy of Untitled drawing_91
+  - first:
+      213: -2193201376184696819
+    second: Copy of Untitled drawing_92
+  - first:
+      213: -1123245209047288707
+    second: Copy of Untitled drawing_93
+  - first:
+      213: 5195795689036412310
+    second: Copy of Untitled drawing_94
+  - first:
+      213: -75337059167454770
+    second: Copy of Untitled drawing_95
+  - first:
+      213: 4109362825441779226
+    second: Copy of Untitled drawing_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 659
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ada9375a389d6c0800000000000000
+      internalID: -4118115637621237113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 659
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1907d0bc9bf8250800000000000000
+      internalID: 5949177914534695350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 659
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d695510da0d8b00800000000000000
+      internalID: 832333394961067404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_3
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 690
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d13c2ce43f24040800000000000000
+      internalID: 4630530886490856723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 659
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5027058b6d3764480800000000000000
+      internalID: -8915311046280842747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_5
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 659
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379f9bd8c8f01e660800000000000000
+      internalID: 7413223557976160627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 659
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c00a193088e7aa0800000000000000
+      internalID: -6161337691286795182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 659
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aab34d22912f3e10800000000000000
+      internalID: 2179497656378964644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_8
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 659
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549b84f9f2a0821b0800000000000000
+      internalID: -5681279730275796667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_9
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 659
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20a0bae62c6ded60800000000000000
+      internalID: 7921106234016571437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 659
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208a1b060dc930e10800000000000000
+      internalID: 2162744664857356290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_11
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 659
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35eecf31ce226be70800000000000000
+      internalID: 9130523691883228755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_12
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 659
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77faff83546bb00c0800000000000000
+      internalID: -4608389385258291337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 676
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3175d4a40d88d490800000000000000
+      internalID: -7721266510041878214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_14
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 652
+        width: 314
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c0b2f85d5a46ec0800000000000000
+      internalID: -3574549867576751050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_15
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 659
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87168aeffa2b0f700800000000000000
+      internalID: 572153621637521784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_16
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 601
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5661f3d93b42fd380800000000000000
+      internalID: -8944389981078612379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_17
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 601
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d577ac2c65d2a1980800000000000000
+      internalID: -8567485490460461219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 601
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2157417ae30b48530800000000000000
+      internalID: 3856400964073583890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 601
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93ab124019208580800000000000000
+      internalID: -8827010119840848996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_20
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 601
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9af92aa1528b1400800000000000000
+      internalID: 295973487781739165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 601
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b8a40f15088b340800000000000000
+      internalID: 4879791285668055826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_22
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 601
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf31b6308407b1d0800000000000000
+      internalID: -3335192050324652067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_23
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 601
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ebe61b35176a210800000000000000
+      internalID: 1343886143089720982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_24
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 601
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c538e0c8bfc5fe090800000000000000
+      internalID: -8003075777357773988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_25
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 601
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e9683bc03014230800000000000000
+      internalID: 3621178928469024268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_26
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 601
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c11edc41524454f0800000000000000
+      internalID: -840974313462033984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_27
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 601
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd08a97f9bd1f3a0800000000000000
+      internalID: -6633279298152690187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_28
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 601
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd17d7369294a580800000000000000
+      internalID: -8816760996604994125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_29
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 601
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7245680b74570b0800000000000000
+      internalID: -5731596127265609764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_30
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 601
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933cc921f0bb3f680800000000000000
+      internalID: -8722422379875351751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 575
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01490d64381df6e0800000000000000
+      internalID: -1802257662431641333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_32
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 544
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2c6674afb984f80800000000000000
+      internalID: -8122070428720643414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 544
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06057891a757f180800000000000000
+      internalID: -9081693772010158578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_34
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 544
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861fcb92679d3e030800000000000000
+      internalID: 3522898435063476584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_35
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 575
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f86bf65f910102d0800000000000000
+      internalID: -3314366066897229582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_36
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 544
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a455f6853609e0bb0800000000000000
+      internalID: -4967874582583225014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_37
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 544
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4bae7ee1c70cc70800000000000000
+      internalID: 8989321328413291712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_38
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 543
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea1161661f93b400800000000000000
+      internalID: 338789315454769896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_39
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 544
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08077452c9a7d0120800000000000000
+      internalID: 2381694589007786112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_40
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 543
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6bc0a3ae63df1e0800000000000000
+      internalID: -2162511866443811148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_41
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 544
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf825af6699432a40800000000000000
+      internalID: 5342194493458557180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_42
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 544
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425f46620aa821870800000000000000
+      internalID: 8652130254575695140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 543
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beda9f6290566acd0800000000000000
+      internalID: -2547237449248428565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_44
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 543
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38d486b4dc735450800000000000000
+      internalID: 6076337575290001468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_45
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 543
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2e0be28bc89cb50800000000000000
+      internalID: 6613972250455499490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_46
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 543
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8b9c0b7a70529d0800000000000000
+      internalID: -2799823176533952314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_47
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 544
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ec984b28743dbb0800000000000000
+      internalID: -4912504141830828502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_48
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 543
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d3f2980eb20a160800000000000000
+      internalID: 7034670861326957873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_49
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 544
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4836107c83f71e0800000000000000
+      internalID: -2197975665760566071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_50
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 544
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea03fd6af7e81f090800000000000000
+      internalID: -8002458383949025106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_51
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 543
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6da17b8708771330800000000000000
+      internalID: 3681543194198257003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_52
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 486
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d29582f2f64311f0800000000000000
+      internalID: -1075437876746546476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_53
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 486
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e30bbf6739fb4010800000000000000
+      internalID: 1174306144353190881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_54
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 486
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63045ab91619dc40800000000000000
+      internalID: 5537481516584797034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_55
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 486
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c6a590385474c30800000000000000
+      internalID: 4343516794722085995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_56
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 486
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28753b824728f110800000000000000
+      internalID: 1294828059625879596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 475
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad81a11a27c0f550800000000000000
+      internalID: 6192668471132786095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_58
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 486
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb08db34f37afe640800000000000000
+      internalID: 5111487992250073275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_59
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 486
+        width: 8
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e7cfee7901de620800000000000000
+      internalID: 2804916387657317995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_60
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 486
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7081235853f267430800000000000000
+      internalID: 3780260844138534919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_61
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 486
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ec063495fff53d0800000000000000
+      internalID: -3215570850071654825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_62
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 486
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4dc4eece4a1afe0800000000000000
+      internalID: -1179480289877109523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_63
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 475
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11eb9f831b30ac8b0800000000000000
+      internalID: -5131284765735272943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_64
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 486
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29103fc817a86f8b0800000000000000
+      internalID: -5118751706159316590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_65
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 486
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7f665c2ccbcc780800000000000000
+      internalID: -8661340438618769495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_66
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 498
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212a03113600d20b0800000000000000
+      internalID: -5751940723592093166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_67
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 486
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6811a1a8e9756f7d0800000000000000
+      internalID: -2885022172850810490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_68
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 371
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a4093833f3f7ab0800000000000000
+      internalID: -5008214770129548644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_69
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 371
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c91ebe736fc91ef0800000000000000
+      internalID: -136850287422989882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_70
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 371
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b1450506d051ae0800000000000000
+      internalID: -1579341387007779987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_71
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 371
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e77d4bd46ded7b0800000000000000
+      internalID: -5197481290704126406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_72
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 360
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4237a40d3a432b260800000000000000
+      internalID: 7111804639750288164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_73
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 371
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47f76ae53464ed00800000000000000
+      internalID: 1001035199911819086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_74
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 371
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb51876b35f6701e0800000000000000
+      internalID: -2231692685004499524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_75
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 371
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43a3ccf402e81ab0800000000000000
+      internalID: -5037027672165473461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_76
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 371
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2040cfb7fd17cec50800000000000000
+      internalID: 6695851950664844290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_77
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 371
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24ac6461b9e34270800000000000000
+      internalID: 8233681491866723374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_78
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 371
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcf93db8255711e0800000000000000
+      internalID: -2227217857249674032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_79
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 371
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520974856289c99f0800000000000000
+      internalID: -460325771441369051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_80
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 371
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8f2763a09390370800000000000000
+      internalID: 8289219305178069186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_81
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 360
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a9db0b79e95e9f0800000000000000
+      internalID: -439771014256289158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_82
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 371
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7c25689f36234e0800000000000000
+      internalID: -2003428960874870863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_83
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 371
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01560478688187e0800000000000000
+      internalID: -1764979596747976438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_84
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 371
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab6f4e1db5d87c20800000000000000
+      internalID: 3204546143108164525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_85
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 313
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27a5b83c2d57a060800000000000000
+      internalID: 6964637793263134509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_86
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 344
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109f6d017229b2140800000000000000
+      internalID: 4696007732947777793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_87
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 313
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049d26adfe1715510800000000000000
+      internalID: 1536134222885083456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_88
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 325
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33daffe1e0bb1fd0800000000000000
+      internalID: -2370106294440111301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_89
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 313
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712fa0b96dcc851d0800000000000000
+      internalID: -3361711899735821801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_90
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 302
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baa5e0b46ae93320800000000000000
+      internalID: 2538317583185455793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_91
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 313
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5a5a99aaf748970800000000000000
+      internalID: 8756263946214024634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_92
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 313
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d000d9be7fe2091e0800000000000000
+      internalID: -2193201376184696819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_93
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 313
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74b31ffe6e6960f0800000000000000
+      internalID: -1123245209047288707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_94
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 313
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695758296ac2b1840800000000000000
+      internalID: 5195795689036412310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_95
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 313
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9b6e5085954fef0800000000000000
+      internalID: -75337059167454770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Untitled drawing_96
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 313
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e17a7a7b3670930800000000000000
+      internalID: 4109362825441779226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Copy of Untitled drawing_0: -4118115637621237113
+      Copy of Untitled drawing_1: 5949177914534695350
+      Copy of Untitled drawing_10: 2162744664857356290
+      Copy of Untitled drawing_11: 9130523691883228755
+      Copy of Untitled drawing_12: -4608389385258291337
+      Copy of Untitled drawing_13: -7721266510041878214
+      Copy of Untitled drawing_14: -3574549867576751050
+      Copy of Untitled drawing_15: 572153621637521784
+      Copy of Untitled drawing_16: -8944389981078612379
+      Copy of Untitled drawing_17: -8567485490460461219
+      Copy of Untitled drawing_18: 3856400964073583890
+      Copy of Untitled drawing_19: -8827010119840848996
+      Copy of Untitled drawing_2: 832333394961067404
+      Copy of Untitled drawing_20: 295973487781739165
+      Copy of Untitled drawing_21: 4879791285668055826
+      Copy of Untitled drawing_22: -3335192050324652067
+      Copy of Untitled drawing_23: 1343886143089720982
+      Copy of Untitled drawing_24: -8003075777357773988
+      Copy of Untitled drawing_25: 3621178928469024268
+      Copy of Untitled drawing_26: -840974313462033984
+      Copy of Untitled drawing_27: -6633279298152690187
+      Copy of Untitled drawing_28: -8816760996604994125
+      Copy of Untitled drawing_29: -5731596127265609764
+      Copy of Untitled drawing_3: 4630530886490856723
+      Copy of Untitled drawing_30: -8722422379875351751
+      Copy of Untitled drawing_31: -1802257662431641333
+      Copy of Untitled drawing_32: -8122070428720643414
+      Copy of Untitled drawing_33: -9081693772010158578
+      Copy of Untitled drawing_34: 3522898435063476584
+      Copy of Untitled drawing_35: -3314366066897229582
+      Copy of Untitled drawing_36: -4967874582583225014
+      Copy of Untitled drawing_37: 8989321328413291712
+      Copy of Untitled drawing_38: 338789315454769896
+      Copy of Untitled drawing_39: 2381694589007786112
+      Copy of Untitled drawing_4: -8915311046280842747
+      Copy of Untitled drawing_40: -2162511866443811148
+      Copy of Untitled drawing_41: 5342194493458557180
+      Copy of Untitled drawing_42: 8652130254575695140
+      Copy of Untitled drawing_43: -2547237449248428565
+      Copy of Untitled drawing_44: 6076337575290001468
+      Copy of Untitled drawing_45: 6613972250455499490
+      Copy of Untitled drawing_46: -2799823176533952314
+      Copy of Untitled drawing_47: -4912504141830828502
+      Copy of Untitled drawing_48: 7034670861326957873
+      Copy of Untitled drawing_49: -2197975665760566071
+      Copy of Untitled drawing_5: 7413223557976160627
+      Copy of Untitled drawing_50: -8002458383949025106
+      Copy of Untitled drawing_51: 3681543194198257003
+      Copy of Untitled drawing_52: -1075437876746546476
+      Copy of Untitled drawing_53: 1174306144353190881
+      Copy of Untitled drawing_54: 5537481516584797034
+      Copy of Untitled drawing_55: 4343516794722085995
+      Copy of Untitled drawing_56: 1294828059625879596
+      Copy of Untitled drawing_57: 6192668471132786095
+      Copy of Untitled drawing_58: 5111487992250073275
+      Copy of Untitled drawing_59: 2804916387657317995
+      Copy of Untitled drawing_6: -6161337691286795182
+      Copy of Untitled drawing_60: 3780260844138534919
+      Copy of Untitled drawing_61: -3215570850071654825
+      Copy of Untitled drawing_62: -1179480289877109523
+      Copy of Untitled drawing_63: -5131284765735272943
+      Copy of Untitled drawing_64: -5118751706159316590
+      Copy of Untitled drawing_65: -8661340438618769495
+      Copy of Untitled drawing_66: -5751940723592093166
+      Copy of Untitled drawing_67: -2885022172850810490
+      Copy of Untitled drawing_68: -5008214770129548644
+      Copy of Untitled drawing_69: -136850287422989882
+      Copy of Untitled drawing_7: 2179497656378964644
+      Copy of Untitled drawing_70: -1579341387007779987
+      Copy of Untitled drawing_71: -5197481290704126406
+      Copy of Untitled drawing_72: 7111804639750288164
+      Copy of Untitled drawing_73: 1001035199911819086
+      Copy of Untitled drawing_74: -2231692685004499524
+      Copy of Untitled drawing_75: -5037027672165473461
+      Copy of Untitled drawing_76: 6695851950664844290
+      Copy of Untitled drawing_77: 8233681491866723374
+      Copy of Untitled drawing_78: -2227217857249674032
+      Copy of Untitled drawing_79: -460325771441369051
+      Copy of Untitled drawing_8: -5681279730275796667
+      Copy of Untitled drawing_80: 8289219305178069186
+      Copy of Untitled drawing_81: -439771014256289158
+      Copy of Untitled drawing_82: -2003428960874870863
+      Copy of Untitled drawing_83: -1764979596747976438
+      Copy of Untitled drawing_84: 3204546143108164525
+      Copy of Untitled drawing_85: 6964637793263134509
+      Copy of Untitled drawing_86: 4696007732947777793
+      Copy of Untitled drawing_87: 1536134222885083456
+      Copy of Untitled drawing_88: -2370106294440111301
+      Copy of Untitled drawing_89: -3361711899735821801
+      Copy of Untitled drawing_9: 7921106234016571437
+      Copy of Untitled drawing_90: 2538317583185455793
+      Copy of Untitled drawing_91: 8756263946214024634
+      Copy of Untitled drawing_92: -2193201376184696819
+      Copy of Untitled drawing_93: -1123245209047288707
+      Copy of Untitled drawing_94: 5195795689036412310
+      Copy of Untitled drawing_95: -75337059167454770
+      Copy of Untitled drawing_96: 4109362825441779226
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

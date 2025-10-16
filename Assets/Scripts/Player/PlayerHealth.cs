@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Collider2D))]
 public class PlayerHealth : MonoBehaviour
@@ -97,7 +98,7 @@ public class PlayerHealth : MonoBehaviour
             rb.linearVelocity = v;
         }
 
-        // Brief control lock so player can’t cancel the push instantly
+        // Brief control lock so player canï¿½t cancel the push instantly
         var pm = GetComponent<PlayerMovement>();
         if (pm != null) pm.ApplyControlLock(controlLockDuration);
 
@@ -105,6 +106,7 @@ public class PlayerHealth : MonoBehaviour
         {
             OnDeath?.Invoke();
             // TODO: disable controls, play death anim, reload scene, etc.
+            SceneManager.LoadScene("StartScene");
             return;
         }
 
