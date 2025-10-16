@@ -443,8 +443,8 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 719074453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Time: 0.2
   m_PreviewTimeScale: 1
@@ -456,7 +456,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.3137207
+        value: 0.6764679
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -464,7 +464,16 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.2617587
+        time: 0.35991848
+        value: 0.2941208
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.71165645
         value: 0
         inSlope: 0
         outSlope: 0
@@ -515,7 +524,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.5
   m_MaskInteraction: 0
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
   m_ApplyActiveColorSpace: 1
 --- !u!1 &480474518 stripped
 GameObject:
