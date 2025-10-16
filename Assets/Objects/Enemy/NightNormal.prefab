@@ -151,6 +151,15 @@ MonoBehaviour:
   probeSideMargin: 0.06
   probeDropOffset: 0
   flipWithScale: 1
+  enableDash: 1
+  telegraphTime: 0.2
+  dashDuration: 0.15
+  dashSpeed: 8
+  burstCount: 3
+  interDashGap: 0.08
+  dashCooldownRange: {x: 2.5, y: 4.5}
+  onlyDashWhenGrounded: 0
+  requireGroundAheadToDash: 1
 --- !u!70 &3092508872980334908
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

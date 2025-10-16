@@ -146,8 +146,8 @@ MonoBehaviour:
   airMaxXSpeed: 10
   gravityScale: 3
   windupTime: 0.15
-  minHopCooldown: 0.65
-  maxHopCooldown: 1.1
+  minHopCooldown: 1.5
+  maxHopCooldown: 2
   groundCheck: {fileID: 7970824085452943049}
   groundCheckRadius: 0.2
   groundLayer:
