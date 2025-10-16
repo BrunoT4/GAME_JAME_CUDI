@@ -1,9 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Form Switch (Day/Night)")]
+    [SerializeField] private Color dayColor = Color.yellow;
+    [SerializeField] private Color nightColor = Color.black;
+    [SerializeField] private SpriteRenderer bodyRenderer; // assign your sprite here in the inspector
+    private bool isNightForm = false;
+    
+    [SerializeField] private bool startAsNightForm = false;
+
+
+
+    [Header("Trail lol")]
+    [SerializeField] private TrailRenderer trail;
+
     [Header("Move")]
     [SerializeField] float moveSpeed = 6f;
 
@@ -26,6 +38,22 @@ public class PlayerMovement : MonoBehaviour
     [Header("Stability")]
     [SerializeField] float groundLockTime = 0.08f; // ignore ground briefly after jump
 
+    // ---------- DODGE ----------
+    [Header("Dodge Attack")]
+    [SerializeField] float dodgeSpeed = 15f;        // how fast the dash is
+    [SerializeField] float dodgeDuration = 0.2f;    // how long the dash lasts
+    [SerializeField] float dodgeCooldown = 0.8f;    // cooldown between dodges
+    [SerializeField] float dodgeControlLock = 0.25f; // prevents normal movement during dash
+
+    private bool isDodging = false;
+    private float dodgeTimer = 0f;
+    private float dodgeCooldownTimer = 0f;
+    private SpriteRenderer sprite;
+
+    [Header("Dodge Visuals")]
+    [SerializeField] [Range(0f, 1f)] float dodgeOpacity = 0.5f; // opacity while dodging
+
+
     // ---------- WALL SETTINGS ----------
     [Header("Wall (slide & jump)")]
     [SerializeField] LayerMask wallLayer;
@@ -47,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerControls controls;
     private Vector2 moveInput;
 
+    private bool wasGroundedLastFrame = false;
+
     private bool isJumping;
     private float heldTime;
     private float groundLockTimer;
@@ -65,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        sprite = GetComponent<SpriteRenderer>();
         controls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -79,11 +110,15 @@ public class PlayerMovement : MonoBehaviour
         // Jump action should be bound to Space in your Input Actions
         controls.Player.Jump.started += _ => TryStartJumpOrWallJumpOrAirJump(); // press
         controls.Player.Jump.canceled += _ => OnJumpReleased();                  // release
+        controls.Player.Dodge.performed += _ => TryDodge();
+
+        controls.Player.SwitchForm.performed += _ => ToggleForm();
     }
 
     private void OnDisable()
     {
         controls.Player.Disable();
+        controls.Player.Dodge.performed -= _ => TryDodge();
     }
 
     private void Start()
@@ -91,6 +126,9 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
         rb.gravityScale = normalGravity;
         airJumpsLeft = maxAirJumps;
+
+        isNightForm = startAsNightForm;
+        UpdateFormVisual();
     }
 
     private void Update()
@@ -102,6 +140,7 @@ public class PlayerMovement : MonoBehaviour
         if (wallJumpLockTimer > 0f) wallJumpLockTimer -= Time.deltaTime;
         if (lastOnWallTime > 0f) lastOnWallTime -= Time.deltaTime;
         if (hitstunTimer > 0f) hitstunTimer -= Time.deltaTime;
+        if (dodgeCooldownTimer > 0f) dodgeCooldownTimer -= Time.deltaTime;
 
         // --- ground ---
         bool rawGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -186,6 +225,10 @@ public class PlayerMovement : MonoBehaviour
         {
             StartGroundJump();
         }
+
+        
+
+        // --- DODGE STUFF --- 
     }
 
     private void FixedUpdate()
@@ -200,6 +243,22 @@ public class PlayerMovement : MonoBehaviour
         }
         // else: preserve current rb.linearVelocity.x (knockback/wall-jump impulse)
     }
+
+    private void UpdateFormVisual()
+    {
+        if (sprite == null)
+            sprite = GetComponent<SpriteRenderer>();
+
+        if (sprite != null)
+            sprite.color = isNightForm ? nightColor : dayColor;
+    }
+
+    private void ToggleForm()
+    {
+        isNightForm = !isNightForm;
+        UpdateFormVisual();
+    }
+
 
     // ------------ JUMP HANDLERS ------------
     private void TryStartJumpOrWallJumpOrAirJump()
@@ -236,14 +295,19 @@ public class PlayerMovement : MonoBehaviour
         isJumping = true;
         heldTime = 0f;
 
-        var v = rb.linearVelocity;
-        if (v.y < 0f) v.y = 0f;
+        Vector2 v = rb.linearVelocity;
+        // Reset vertical component
         v.y = jumpVelocity;
+
+        // Force horizontal velocity to current move input only
+        v.x = moveInput.x * moveSpeed;
+
         rb.linearVelocity = v;
 
         rb.gravityScale = holdGravity;
         groundLockTimer = groundLockTime;
     }
+
 
     private void StartAirJump()
     {
@@ -320,4 +384,67 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireSphere(pos + Vector2.left * wallCheckOffsetX, wallCheckRadius);
         Gizmos.DrawWireSphere(pos + Vector2.right * wallCheckOffsetX, wallCheckRadius);
     }
+
+    // ------------ DODGE ------------
+private void TryDodge()
+{
+    if (Mathf.Abs(moveInput.x) < 0.1f) return;
+    if (isDodging || dodgeCooldownTimer > 0f || hitstunTimer > 0f) return;
+    StartCoroutine(DoDodge());
+}
+
+private System.Collections.IEnumerator DoDodge()
+{
+    isDodging = true;
+    dodgeCooldownTimer = dodgeCooldown;
+    
+    // Ignore collisions with enemies
+    int playerLayer = LayerMask.NameToLayer("Player");
+    int enemyLayer = LayerMask.NameToLayer("Enemy");
+    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
+
+    // Fade player slightly
+    if (sprite != null)
+    {
+        Color c = sprite.color;
+        c.a = dodgeOpacity;
+        sprite.color = c;
+    }
+    
+    // add trail
+    if (trail != null)
+        trail.emitting = true;
+
+    float elapsed = 0f;
+    float originalGravity = rb.gravityScale;
+    rb.gravityScale = 0f; // no fall during dash
+
+    float direction = Mathf.Sign(moveInput.x);
+    if (direction == 0f)
+        direction = transform.localScale.x >= 0 ? 1f : -1f;
+
+    rb.linearVelocity = new Vector2(direction * dodgeSpeed, 0f);
+    wallJumpLockTimer = dodgeControlLock;
+
+     while (elapsed < dodgeDuration)
+    {
+        elapsed += Time.deltaTime;
+        yield return null;
+    }
+    
+    if (sprite != null)
+    {
+        Color c = sprite.color;
+        c.a = 1f;
+        sprite.color = c;
+    }
+    yield return new WaitForSeconds(0.1f);
+    if (trail != null)
+        trail.emitting = false;
+
+    isDodging = false;
+    rb.gravityScale = originalGravity;
+    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+}
+
 }

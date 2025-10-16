@@ -25,9 +25,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
+                    "name": "Dodge",
                     "type": "Button",
-                    "id": "106868bc-b3d6-4749-9ec5-d44208ccca75",
+                    "id": "8edb8861-2700-463b-8607-50722b82cf0e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchForm",
+                    "type": "Button",
+                    "id": "3b9efa0a-84de-48aa-9ce4-171d093c9c0d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -109,6 +118,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c482eb88-0d18-491c-ae08-b7b7ea40dd76",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dodge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d1b077a-fc30-4882-8123-56f4d56b031d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchForm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8668b0a6-fbcf-4069-9838-2459413b4ec7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchForm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
