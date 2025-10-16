@@ -240,6 +240,11 @@ public class PlayerMovement : MonoBehaviour
         {
             float xInput = moveInput.x;
             rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y);
+
+            if (Mathf.Abs(xInput) > 0.05f)
+            {
+                sprite.flipX = xInput < 0f;
+            }
         }
         // else: preserve current rb.linearVelocity.x (knockback/wall-jump impulse)
     }

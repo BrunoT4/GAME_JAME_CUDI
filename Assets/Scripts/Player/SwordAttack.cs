@@ -76,15 +76,21 @@ public class SwordAttack : MonoBehaviour
         controls.Player.Disable();
     }
 
-    void Update()
+void Update()
+{
+    Vector2 mv = controls.Player.Move.ReadValue<Vector2>();
+
+    // Prefer sprite.flipX if available
+    if (sprite != null)
     {
-        // Track facing from move X, fallback to sprite.flipX
-        Vector2 mv = controls.Player.Move.ReadValue<Vector2>();
-        if (useMoveXToTrackFacing && Mathf.Abs(mv.x) > 0.05f)
-            lastFacing = mv.x > 0f ? 1 : -1;
-        else if (sprite)
-            lastFacing = sprite.flipX ? -1 : 1;
+        lastFacing = sprite.flipX ? -1 : 1;
     }
+    else if (useMoveXToTrackFacing && Mathf.Abs(mv.x) > 0.05f)
+    {
+        lastFacing = mv.x > 0f ? 1 : -1;
+    }
+}
+
 
     bool IsGrounded()
     {
@@ -159,6 +165,21 @@ public class SwordAttack : MonoBehaviour
                 break;
             default: // Right
                 size = rightSize; offset = rightOffset; break;
+        }
+
+        // --- ensure the hitbox matches player facing ---
+        if (lastFacing < 0 && (dir == AttackDir.Right || dir == AttackDir.Left))
+        {
+            offset.x = -Mathf.Abs(offset.x);
+        }
+        else if (lastFacing > 0 && (dir == AttackDir.Right || dir == AttackDir.Left))
+        {
+            offset.x = Mathf.Abs(offset.x);
+        }
+
+        if (dir == AttackDir.Right && lastFacing < 0)
+        {
+            offset.x = -offset.x;
         }
 
         hitbox.SetLocalBox(offset, size);

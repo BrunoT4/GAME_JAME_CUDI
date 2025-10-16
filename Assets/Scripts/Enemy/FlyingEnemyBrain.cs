@@ -41,10 +41,17 @@ public class FlyingEnemyBrain : MonoBehaviour
 
     private void Start()
     {
-        // Flying body: turn off gravity
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
-    }
+        // auto-find the player in the scene
+        if (player == null)
+        {
+            var pObj = GameObject.FindGameObjectWithTag("Player");
+            if (pObj != null)
+                player = pObj.transform;
+        }
+    }   
+
 
     private void FixedUpdate()
     {

@@ -68,14 +68,18 @@ public class JumpingEnemyBrain : MonoBehaviour
         baseScale = transform.localScale;
     }
 
-    private void Start()
-    {
-        rb.gravityScale = gravityScale;
-        rb.freezeRotation = true;
+private void Start()
+{
+    rb.gravityScale = gravityScale;
+    rb.freezeRotation = true;
 
-        if (debugLogs)
-            Debug.Log($"[JumpingEnemyBrain] Start: rb.bodyType={rb.bodyType}, freezeRotZ={rb.freezeRotation}, gravityScale={rb.gravityScale}");
+    if (player == null)
+    {
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            player = playerObj.transform;
     }
+}
 
     private void OnValidate()
     {

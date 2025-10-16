@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7970824085452943049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,8 +44,9 @@ GameObject:
   - component: {fileID: 6363680626093235984}
   - component: {fileID: 1540735956408076503}
   - component: {fileID: 3802214694187736457}
-  m_Layer: 0
-  m_Name: JumpingEnemy
+  - component: {fileID: 45078136802807074}
+  m_Layer: 8
+  m_Name: DayJumping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,11 +113,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1840406221
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6132076, g: 0.03760237, b: 0.03760237, a: 1}
+  m_Color: {r: 0.5754717, g: 0.25049946, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -224,6 +225,24 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.49999997
+--- !u!114 &45078136802807074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870023925448114044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1301630924d813840bc77bff80145d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  scoreValue: 200
+  maxHP: 3
+  destroyOnDeath: 1
+  disableDuringStun:
+  - {fileID: 6363680626093235984}
+  zeroVelocityOnStun: 1
 --- !u!1 &7608431996537305324
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +254,7 @@ GameObject:
   - component: {fileID: 648027968778637299}
   - component: {fileID: 5656128828297907976}
   - component: {fileID: 6061773159004003829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyDamageBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

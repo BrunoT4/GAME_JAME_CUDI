@@ -4,6 +4,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyHealth : MonoBehaviour
 {
+    [Header("Score")]
+    [SerializeField] private int scoreValue = 10;
+
     [Header("Health")]
     [SerializeField] int maxHP = 3;
     [SerializeField] bool destroyOnDeath = true;
@@ -15,6 +18,9 @@ public class EnemyHealth : MonoBehaviour
     private int hp;
     private float stunTimer;
     private Rigidbody2D rb;
+
+    private bool isDead = false;
+
 
     void Awake()
     {
@@ -36,12 +42,20 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int dmg, Vector2 hitFromWorldPos)
     {
+        if (isDead) return;
+        
         hp = Mathf.Max(0, hp - Mathf.Max(1, dmg));
         if (hp <= 0)
         {
-            if (destroyOnDeath) Destroy(gameObject);
+
+            isDead = true;
+
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.AddScore(scoreValue);
+
+            if (destroyOnDeath)
+                Destroy(gameObject);
         }
-        // (Optional: add flash/FX here)
     }
 
     /// <summary>

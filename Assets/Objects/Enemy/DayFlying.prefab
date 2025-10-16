@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5704388907409067740}
   - component: {fileID: 3818880820228397310}
   - component: {fileID: 8505799162810283638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyDamageBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,8 +106,9 @@ GameObject:
   - component: {fileID: 8853690281809126559}
   - component: {fileID: 110112868891424114}
   - component: {fileID: 3218583767932880564}
-  m_Layer: 0
-  m_Name: FlyingEnemy
+  - component: {fileID: 554806259996525848}
+  m_Layer: 8
+  m_Name: DayFlying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,11 +174,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1840406221
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.8301887, g: 0.11356357, b: 0.11356357, a: 1}
+  m_Color: {r: 1, g: 0.43189976, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -279,3 +280,21 @@ MonoBehaviour:
   enableHover: 1
   hoverAmplitude: 0.25
   hoverFrequency: 2
+--- !u!114 &554806259996525848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997829534913359608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1301630924d813840bc77bff80145d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  scoreValue: 300
+  maxHP: 3
+  destroyOnDeath: 1
+  disableDuringStun:
+  - {fileID: 3218583767932880564}
+  zeroVelocityOnStun: 0

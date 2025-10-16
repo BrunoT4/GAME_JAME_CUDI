@@ -4,6 +4,7 @@
 [RequireComponent(typeof(Collider2D))] // works great with CapsuleCollider2D
 public class SimpleEnemyBrain : MonoBehaviour
 {
+
     [Header("Target")]
     [SerializeField] private Transform player;        // drag your Player here
 
@@ -42,6 +43,18 @@ public class SimpleEnemyBrain : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
     }
+
+    private void Start()
+{
+    // auto-find the player in the scene
+    if (player == null)
+    {
+        var pObj = GameObject.FindGameObjectWithTag("Player");
+        if (pObj != null)
+            player = pObj.transform;
+    }
+}
+
 
     private void FixedUpdate()
     {
