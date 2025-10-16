@@ -1010,6 +1010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimpleEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3092508872980334908, guid: 01333010d4ce3d547b95a238caa67ffc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6615720509149181196, guid: 01333010d4ce3d547b95a238caa67ffc, type: 3}
       propertyPath: player
       value: 
