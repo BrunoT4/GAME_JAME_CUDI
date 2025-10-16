@@ -781,8 +781,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 812, y: 483.75894}
-  m_SizeDelta: {x: 200, y: 85.202}
+  m_AnchoredPosition: {x: 566.793, y: 488.86}
+  m_SizeDelta: {x: 690.414, y: 74.997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834472760
 MonoBehaviour:
@@ -806,8 +806,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Score
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -831,10 +831,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -576.11536, y: 0, z: 0, w: 0}
+  m_margin: {x: -576.11536, y: 0, z: 0, w: 21.193933}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1718,12 +1718,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 5768136261650605694, guid: 12717c7308f9b7e4e96f786c7529ce5f, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768136261650605694, guid: 12717c7308f9b7e4e96f786c7529ce5f, type: 3}
       propertyPath: m_SortingLayerID
       value: -1483360979
       objectReference: {fileID: 0}
     - target: {fileID: 5768136261650605694, guid: 12717c7308f9b7e4e96f786c7529ce5f, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560663354631922594, guid: 12717c7308f9b7e4e96f786c7529ce5f, type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6774970899526784853, guid: 12717c7308f9b7e4e96f786c7529ce5f, type: 3}
       propertyPath: m_AnchorMax.y
