@@ -187,8 +187,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""22433063-c3b5-4dbb-84dc-f7bed8d543b4"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""id"": ""55877dce-92d6-42e2-b725-79d38c8dfbdf"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -198,12 +198,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""55877dce-92d6-42e2-b725-79d38c8dfbdf"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""id"": ""7c88f6d7-5c4b-452c-bedf-c9641c88974c"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
