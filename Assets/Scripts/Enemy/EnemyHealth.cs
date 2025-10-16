@@ -11,6 +11,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int maxHP = 3;
     [SerializeField] bool destroyOnDeath = true;
 
+    [SerializeField] private FormType formType = FormType.Light;
+    public FormType GetFormType() => formType;
+
     [Header("Stun / AI freeze")]
     [SerializeField] MonoBehaviour[] disableDuringStun; // e.g. SimpleEnemyBrain, FlyingEnemyBrain, JumpingEnemyBrain
     [SerializeField] bool zeroVelocityOnStun = true;

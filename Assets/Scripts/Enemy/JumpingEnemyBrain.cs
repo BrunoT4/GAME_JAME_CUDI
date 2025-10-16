@@ -152,7 +152,8 @@ private void Start()
                 int dir = (dx > 0f) ? +1 : -1;
 
                 bool groundAhead = HasGroundAhead(dir);
-                bool safe = debugIgnoreLedge || groundAhead;
+                // bool safe = debugIgnoreLedge || groundAhead;
+                bool safe = true;
 
                 if (debugLogs)
                     Debug.Log($"[JumpingEnemyBrain] grounded={grounded} cooldown<=0, dx={dx:F2}, dir={dir}, groundAhead={groundAhead}, ignoreLedge={debugIgnoreLedge}");

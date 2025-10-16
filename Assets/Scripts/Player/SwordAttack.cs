@@ -8,7 +8,8 @@ public class SwordAttack : MonoBehaviour
     public enum AttackDir { Up, Down, Right, Left }
 
     [Header("Wiring")]
-    [SerializeField] PlayerMovement movement;      // drag your PlayerMovement here
+    [SerializeField] private PlayerMovement movement;
+    public PlayerMovement Movement => movement;
     [SerializeField] Transform groundCheck;        // reuse player groundCheck
     [SerializeField] LayerMask groundLayer;
     [SerializeField] SpriteRenderer sprite;        // your Visual's SpriteRenderer

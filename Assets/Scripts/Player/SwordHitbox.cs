@@ -40,6 +40,17 @@ public class SwordHitbox : MonoBehaviour
         var eh = other.GetComponentInParent<EnemyHealth>();
         if (!eh) return;
 
+        // Get the player's form (from the SwordAttack's movement reference)
+        var playerForm = owner?.Movement?.GetFormType() ?? FormType.Light;
+
+        // Skip damage if same form
+        if (eh.GetFormType() == playerForm)
+        {
+            // Optional: feedback so player knows it's immune
+            Debug.Log($"No damage — same form ({playerForm})");
+            return;
+        }
+
         // Deal damage
         eh.TakeDamage(damage, transform.position);
 

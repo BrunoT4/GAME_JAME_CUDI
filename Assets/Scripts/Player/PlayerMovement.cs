@@ -8,9 +8,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Color nightColor = Color.black;
     [SerializeField] private SpriteRenderer bodyRenderer; // assign your sprite here in the inspector
     private bool isNightForm = false;
-    
+
     [SerializeField] private bool startAsNightForm = false;
 
+    [SerializeField] private FormType formType = FormType.Light;
 
 
     [Header("Trail lol")]
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
 
     [Header("Dodge Visuals")]
-    [SerializeField] [Range(0f, 1f)] float dodgeOpacity = 0.5f; // opacity while dodging
+    [SerializeField][Range(0f, 1f)] float dodgeOpacity = 0.5f; // opacity while dodging
 
 
     // ---------- WALL SETTINGS ----------
@@ -128,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
         airJumpsLeft = maxAirJumps;
 
         isNightForm = startAsNightForm;
+        formType = isNightForm ? FormType.Dark : FormType.Light;
         UpdateFormVisual();
     }
 
@@ -226,7 +228,7 @@ public class PlayerMovement : MonoBehaviour
             StartGroundJump();
         }
 
-        
+
 
         // --- DODGE STUFF --- 
     }
@@ -262,6 +264,8 @@ public class PlayerMovement : MonoBehaviour
     {
         isNightForm = !isNightForm;
         UpdateFormVisual();
+
+        formType = isNightForm ? FormType.Dark : FormType.Light;
     }
 
 
@@ -391,65 +395,70 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // ------------ DODGE ------------
-private void TryDodge()
-{
-    if (Mathf.Abs(moveInput.x) < 0.1f) return;
-    if (isDodging || dodgeCooldownTimer > 0f || hitstunTimer > 0f) return;
-    StartCoroutine(DoDodge());
-}
-
-private System.Collections.IEnumerator DoDodge()
-{
-    isDodging = true;
-    dodgeCooldownTimer = dodgeCooldown;
-    
-    // Ignore collisions with enemies
-    int playerLayer = LayerMask.NameToLayer("Player");
-    int enemyLayer = LayerMask.NameToLayer("Enemy");
-    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
-
-    // Fade player slightly
-    if (sprite != null)
+    private void TryDodge()
     {
-        Color c = sprite.color;
-        c.a = dodgeOpacity;
-        sprite.color = c;
+        if (Mathf.Abs(moveInput.x) < 0.1f) return;
+        if (isDodging || dodgeCooldownTimer > 0f || hitstunTimer > 0f) return;
+        StartCoroutine(DoDodge());
     }
-    
-    // add trail
-    if (trail != null)
-        trail.emitting = true;
 
-    float elapsed = 0f;
-    float originalGravity = rb.gravityScale;
-    rb.gravityScale = 0f; // no fall during dash
-
-    float direction = Mathf.Sign(moveInput.x);
-    if (direction == 0f)
-        direction = transform.localScale.x >= 0 ? 1f : -1f;
-
-    rb.linearVelocity = new Vector2(direction * dodgeSpeed, 0f);
-    wallJumpLockTimer = dodgeControlLock;
-
-     while (elapsed < dodgeDuration)
+    private System.Collections.IEnumerator DoDodge()
     {
-        elapsed += Time.deltaTime;
-        yield return null;
-    }
-    
-    if (sprite != null)
-    {
-        Color c = sprite.color;
-        c.a = 1f;
-        sprite.color = c;
-    }
-    yield return new WaitForSeconds(0.1f);
-    if (trail != null)
-        trail.emitting = false;
+        isDodging = true;
+        dodgeCooldownTimer = dodgeCooldown;
 
-    isDodging = false;
-    rb.gravityScale = originalGravity;
-    Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
-}
+        // Ignore collisions with enemies
+        int playerLayer = LayerMask.NameToLayer("Player");
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
+
+        // Fade player slightly
+        if (sprite != null)
+        {
+            Color c = sprite.color;
+            c.a = dodgeOpacity;
+            sprite.color = c;
+        }
+
+        // add trail
+        if (trail != null)
+            trail.emitting = true;
+
+        float elapsed = 0f;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f; // no fall during dash
+
+        float direction = Mathf.Sign(moveInput.x);
+        if (direction == 0f)
+            direction = transform.localScale.x >= 0 ? 1f : -1f;
+
+        rb.linearVelocity = new Vector2(direction * dodgeSpeed, 0f);
+        wallJumpLockTimer = dodgeControlLock;
+
+        while (elapsed < dodgeDuration)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        if (sprite != null)
+        {
+            Color c = sprite.color;
+            c.a = 1f;
+            sprite.color = c;
+        }
+        yield return new WaitForSeconds(0.1f);
+        if (trail != null)
+            trail.emitting = false;
+
+        isDodging = false;
+        rb.gravityScale = originalGravity;
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+    }
+
+    public FormType GetFormType()
+    {
+        return formType;
+    }
 
 }
