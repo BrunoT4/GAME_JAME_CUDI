@@ -1011,6 +1011,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  baseScoreForScaling: 10000
+  intervalMultiplierPerLevel: 0.95
+  minSpawnInterval: 0.35
+  levelsPerExtraSpawn: 2
+  maxExtraSpawns: 10
 --- !u!4 &1095092707
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,6 +1335,10 @@ PrefabInstance:
       propertyPath: trail
       value: 
       objectReference: {fileID: 405933138}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: dayColor.b
       value: 0.06915272

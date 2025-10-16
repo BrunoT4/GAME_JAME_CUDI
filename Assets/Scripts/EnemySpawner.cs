@@ -11,6 +11,24 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject[] dayEnemyPrefabs;
     [SerializeField] private GameObject[] nightEnemyPrefabs;
 
+    // ---------- DIFFICULTY SCALING ----------
+    [Header("Difficulty (score-based)")]
+    [Tooltip("Start scaling once score >= this value (e.g., 10000).")]
+    [SerializeField] private int baseScoreForScaling = 10000;
+
+    [Tooltip("Each level multiplies interval by this factor (e.g., 0.97 means 3% faster per level).")]
+    [SerializeField] private float intervalMultiplierPerLevel = 0.95f;
+
+    [Tooltip("Clamp so interval never goes below this.")]
+    [SerializeField] private float minSpawnInterval = 0.35f;
+
+    [Header("Extra Spawns per Tick (optional)")]
+    [Tooltip("How many difficulty levels per +1 extra spawn (e.g., 8 => +1 every 8 levels). Set 999 to disable.")]
+    [SerializeField] private int levelsPerExtraSpawn = 2;
+
+    [Tooltip("Cap the number of extra enemies spawned per tick.")]
+    [SerializeField] private int maxExtraSpawns = 10;
+
     private bool isNight = false;
     private bool spawning = true;
 
@@ -57,34 +75,74 @@ public class EnemySpawner : MonoBehaviour
     {
         while (spawning)
         {
+            // -------- DIFFICULTY --------
+            int score = GetScore();
+            int level = GetDifficultyLevel(score);
+            float effectiveInterval = GetScaledInterval(level);
+
             // Wait a random time between 80–120% of the base interval for variety
-            yield return new WaitForSeconds(Random.Range(spawnInterval * 0.8f, spawnInterval * 1.2f));
+            float wait = Random.Range(effectiveInterval * 0.8f, effectiveInterval * 1.2f);
+            yield return new WaitForSeconds(wait);
 
             // --- Safety checks each cycle ---
             if (spawnPoints == null || spawnPoints.Length == 0)
                 continue;
 
-            // --- Pick random prefab ---
-            GameObject prefab = null;
+            // How many to spawn this tick (1 + extra from difficulty)
+            int extra = (levelsPerExtraSpawn <= 0) ? 0
+                        : Mathf.Clamp(level / levelsPerExtraSpawn, 0, maxExtraSpawns);
+            int countThisTick = 1 + extra;
 
-            if (isNight && nightEnemyPrefabs != null && nightEnemyPrefabs.Length > 0)
+            for (int i = 0; i < countThisTick; i++)
             {
-                prefab = nightEnemyPrefabs[Random.Range(0, nightEnemyPrefabs.Length)];
+                GameObject prefab = PickPrefabForCurrentCycle();
+                if (prefab == null) continue;
+
+                Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                Instantiate(prefab, spawnPoint.position, Quaternion.identity);
             }
-            else if (!isNight && dayEnemyPrefabs != null && dayEnemyPrefabs.Length > 0)
-            {
-                prefab = dayEnemyPrefabs[Random.Range(0, dayEnemyPrefabs.Length)];
-            }
-
-            // Skip if still null (no enemies assigned for current cycle)
-            if (prefab == null)
-                continue;
-
-            // --- Pick random spawn point ---
-            Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-
-            // --- Spawn enemy ---
-            Instantiate(prefab, spawnPoint.position, Quaternion.identity);
         }
+    }
+
+    // --------------- Helpers ---------------
+
+    private int GetScore()
+    {
+        return (ScoreManager.Instance != null) ? ScoreManager.Instance.score : 0;
+    }
+
+    private int GetDifficultyLevel(int score)
+    {
+        const int pointsPerLevel = 10000;
+        return Mathf.Max(0, score / pointsPerLevel);
+    }
+
+    private float GetScaledInterval(int level)
+    {
+        // exponential (multiplicative) shrink, clamped to min
+        float scaled = spawnInterval;
+        if (level > 0)
+        {
+            // scaled = spawnInterval * (intervalMultiplierPerLevel ^ level)
+            scaled *= Mathf.Pow(Mathf.Clamp(intervalMultiplierPerLevel, 0.01f, 1.0f), level);
+        }
+        return Mathf.Max(minSpawnInterval, scaled);
+    }
+
+    private GameObject PickPrefabForCurrentCycle()
+    {
+        if (isNight && nightEnemyPrefabs != null && nightEnemyPrefabs.Length > 0)
+            return nightEnemyPrefabs[Random.Range(0, nightEnemyPrefabs.Length)];
+
+        if (!isNight && dayEnemyPrefabs != null && dayEnemyPrefabs.Length > 0)
+            return dayEnemyPrefabs[Random.Range(0, dayEnemyPrefabs.Length)];
+
+        // fallback if arrays for this cycle are empty
+        if (dayEnemyPrefabs != null && dayEnemyPrefabs.Length > 0)
+            return dayEnemyPrefabs[Random.Range(0, dayEnemyPrefabs.Length)];
+        if (nightEnemyPrefabs != null && nightEnemyPrefabs.Length > 0)
+            return nightEnemyPrefabs[Random.Range(0, nightEnemyPrefabs.Length)];
+
+        return null;
     }
 }
