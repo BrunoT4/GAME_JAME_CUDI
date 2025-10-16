@@ -9,26 +9,25 @@ public class DayNightManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private SpriteRenderer background; // assign your background sprite
-    [SerializeField] private Color dayColor = new Color(1f, 0.95f, 0.6f);
-    [SerializeField] private Color nightColor = new Color(0.1f, 0.1f, 0.25f);
+    [SerializeField] private Color dayColor = new(1f, 0.95f, 0.6f);
+    [SerializeField] private Color nightColor = new(0.1f, 0.1f, 0.25f);
 
     public bool IsNight { get; private set; } = false;
-
 
     public delegate void CycleChanged(bool isNight);
     public static event CycleChanged OnCycleChanged;
 
     private void Start()
     {
-        // Ensure we start in day mode visually
+        // --- Initialize as day visually ---
         IsNight = false;
         if (background != null)
             background.color = dayColor;
 
-        // Notify listeners (like EnemySpawner) that it's daytime at start
+        // --- Notify listeners (so platforms, etc., know the starting state) ---
         OnCycleChanged?.Invoke(IsNight);
 
-        // Start the automatic cycle
+        // --- Start automatic cycle ---
         StartCoroutine(CycleRoutine());
     }
 
@@ -36,13 +35,18 @@ public class DayNightManager : MonoBehaviour
     {
         while (true)
         {
-            // Random duration for current cycle
+            // --- Wait for the random duration before switching ---
             float duration = Random.Range(minCycleDuration, maxCycleDuration);
+            yield return new WaitForSeconds(duration);
 
-            // Fade background color gradually
+            // --- Flip state first ---
+            IsNight = !IsNight;
+            OnCycleChanged?.Invoke(IsNight); // 🔥 Notify immediately so listeners can fade in sync
+
+            // --- Fade background color to new target ---
             float elapsed = 0f;
             Color start = background.color;
-            Color target = IsNight ? dayColor : nightColor;
+            Color target = IsNight ? nightColor : dayColor;
 
             while (elapsed < 1f)
             {
@@ -50,15 +54,6 @@ public class DayNightManager : MonoBehaviour
                 background.color = Color.Lerp(start, target, elapsed);
                 yield return null;
             }
-
-            // Switch cycle
-            IsNight = !IsNight;
-
-            // Notify listeners
-            OnCycleChanged?.Invoke(IsNight);
-
-            // Wait for the random duration
-            yield return new WaitForSeconds(duration);
         }
     }
 }
