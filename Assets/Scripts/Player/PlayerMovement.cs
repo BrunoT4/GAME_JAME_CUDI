@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         controls.Player.Move.performed += c => moveInput = c.ReadValue<Vector2>();
         controls.Player.Move.canceled += _ => moveInput = Vector2.zero;
 
+        // Jump action should be bound to Space in your Input Actions
         controls.Player.Jump.started += _ => TryStartJumpOrWallJumpOrAirJump(); // press
         controls.Player.Jump.canceled += _ => OnJumpReleased();                  // release
     }
@@ -179,10 +180,9 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = normalGravity;
         }
 
-        // --- fallback ground jump if event missed (blocked during hitstun) ---
+        // --- fallback ground jump if event missed (SPACE ONLY; W removed) ---
         if (!isJumping && grounded && hitstunTimer <= 0f &&
-            (Keyboard.current?.spaceKey.wasPressedThisFrame == true ||
-             Keyboard.current?.wKey.wasPressedThisFrame == true))
+            (Keyboard.current?.spaceKey.wasPressedThisFrame == true))
         {
             StartGroundJump();
         }
@@ -291,6 +291,21 @@ public class PlayerMovement : MonoBehaviour
         if (duration <= 0f) duration = hitstunControlLock;
         hitstunTimer = Mathf.Max(hitstunTimer, duration);
     }
+
+    // ===== POGO SUPPORT =====
+    public void PogoBounce(float upVelocity, float lockTime = 0.05f)
+    {
+        var v = rb.linearVelocity;
+        v.y = Mathf.Max(v.y, upVelocity);
+        rb.linearVelocity = v;
+
+        ApplyControlLock(lockTime);
+        // Optional: give back an air jump after pogo
+        // airJumpsLeft = Mathf.Max(airJumpsLeft, 1);
+    }
+
+    public bool IsControlLocked() => (hitstunTimer > 0f || wallJumpLockTimer > 0f);
+    public float GetGroundCheckRadius() => groundCheckRadius;
 
     private void OnDrawGizmosSelected()
     {
