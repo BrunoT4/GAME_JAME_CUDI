@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 3567204071223929696}
   - component: {fileID: 6363680626093235984}
   - component: {fileID: 1540735956408076503}
-  - component: {fileID: 3802214694187736457}
   - component: {fileID: 45078136802807074}
+  - component: {fileID: 6655570732481747307}
   m_Layer: 8
   m_Name: NightJumping
   m_TagString: Untagged
@@ -61,8 +61,8 @@ Transform:
   m_GameObject: {fileID: 3870023925448114044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.11, y: -8.23, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalPosition: {x: 7.66, y: -8.69, z: 0}
+  m_LocalScale: {x: 0.17, y: 0.18, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7970824085452943049}
@@ -116,7 +116,7 @@ SpriteRenderer:
   m_SortingLayerID: -1840406221
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -2779585072787734382, guid: 7477a5aa6c1dac14cb925cbfd47a0ac3, type: 3}
   m_Color: {r: 0.043461964, g: 0, b: 0.5764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   minHopCooldown: 1.5
   maxHopCooldown: 2
   groundCheck: {fileID: 7970824085452943049}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 1.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -189,8 +189,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &3802214694187736457
-CircleCollider2D:
+--- !u!114 &45078136802807074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870023925448114044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1301630924d813840bc77bff80145d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  scoreValue: 200
+  maxHP: 3
+  destroyOnDeath: 1
+  formType: 1
+  disableDuringStun:
+  - {fileID: 6363680626093235984}
+  zeroVelocityOnStun: 1
+--- !u!61 &6655570732481747307
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -223,27 +242,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.49999997
---- !u!114 &45078136802807074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3870023925448114044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1301630924d813840bc77bff80145d35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  scoreValue: 200
-  maxHP: 3
-  destroyOnDeath: 1
-  formType: 1
-  disableDuringStun:
-  - {fileID: 6363680626093235984}
-  zeroVelocityOnStun: 1
+  m_Offset: {x: 0, y: -2.647747}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.93, y: 12.21}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.93, y: 6.914507}
+  m_EdgeRadius: 0
 --- !u!1 &7608431996537305324
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,8 +263,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648027968778637299}
-  - component: {fileID: 5656128828297907976}
   - component: {fileID: 6061773159004003829}
+  - component: {fileID: 7506944525214925763}
   m_Layer: 8
   m_Name: EnemyDamageBox
   m_TagString: Untagged
@@ -277,8 +287,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2360241755759795695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5656128828297907976
-CircleCollider2D:
+--- !u!114 &6061773159004003829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608431996537305324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b910ac791830ef041a138a56f45b21bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
+  damage: 1
+  targetTag: Player
+--- !u!61 &7506944525214925763
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -311,19 +335,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!114 &6061773159004003829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7608431996537305324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b910ac791830ef041a138a56f45b21bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 1
-  targetTag: Player
+  m_Offset: {x: -0.009037018, y: -2.6707032}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 8.182354, y: 7.2954125}
+  m_EdgeRadius: 0

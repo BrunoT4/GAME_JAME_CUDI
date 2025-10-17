@@ -1534,24 +1534,48 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: dayColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: dayColor.b
-      value: 0.06915272
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: dayColor.g
-      value: 0.64799684
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: dayColor.r
-      value: 0.6981132
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: bodyRenderer
       value: 
+      objectReference: {fileID: 6028135956823648491}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: nightColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: nightColor.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: nightColor.g
+      value: 0.28454968
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: nightColor.r
+      value: 0.14796188
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: startAsNightForm
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: wallCheckOffsetX
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1727552877128407024, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: groundCheckRadius
@@ -1569,13 +1593,25 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.00000018952531
       objectReference: {fileID: 0}
+    - target: {fileID: 2054822547303950370, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009765390679626887, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009765390679626887, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38155
+      objectReference: {fileID: 0}
     - target: {fileID: 3009765390679626887, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.33
+      value: -15.5597
       objectReference: {fileID: 0}
     - target: {fileID: 3009765390679626887, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.55
+      value: -7.9853
       objectReference: {fileID: 0}
     - target: {fileID: 3009765390679626887, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1683,15 +1719,15 @@ MonoBehaviour:
   damage: 1
   attackActiveTime: 0.12
   attackCooldown: 0.18
-  rightOffset: {x: 1, y: 0}
-  rightSize: {x: 2, y: 1.5}
+  rightOffset: {x: 4, y: 0}
+  rightSize: {x: 5, y: 4}
   mirrorLeftFromRight: 1
   leftOffsetOverride: {x: 0, y: 0}
   leftSizeOverride: {x: 0, y: 0}
-  upOffset: {x: 0, y: 1.75}
-  upSize: {x: 1.5, y: 1.2}
-  downOffset: {x: 0, y: -1.75}
-  downSize: {x: 1.5, y: 1.2}
+  upOffset: {x: 0, y: 5}
+  upSize: {x: 5, y: 4}
+  downOffset: {x: 0, y: -5}
+  downSize: {x: 5, y: 4}
   pogoUpVelocity: 12
   pogoControlLock: 0.06
   requireAirForDown: 1
