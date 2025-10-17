@@ -34,6 +34,15 @@ public class PlayerHealth : MonoBehaviour
     private bool invulnerable;
     private Collider2D pcol;
 
+    void Start()
+    {
+        // Always start with full health when entering the scene
+        currentHearts = maxHearts;
+        invulnerable = false;
+        OnHealthChanged?.Invoke(currentHearts, maxHearts);
+    }
+
+
     void Awake()
     {
         if (!rb) rb = GetComponent<Rigidbody2D>();
@@ -42,6 +51,27 @@ public class PlayerHealth : MonoBehaviour
 
         currentHearts = Mathf.Clamp(currentHearts, 1, maxHearts);
         OnHealthChanged?.Invoke(currentHearts, maxHearts);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "GameScene")
+        {
+            // reset health to full
+            currentHearts = maxHearts;
+            invulnerable = false;
+            OnHealthChanged?.Invoke(currentHearts, maxHearts);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void Heal(int amount)
