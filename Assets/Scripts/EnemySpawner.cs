@@ -14,7 +14,8 @@ public class EnemySpawner : MonoBehaviour
     // ---------- DIFFICULTY SCALING ----------
     [Header("Difficulty (score-based)")]
     [Tooltip("Start scaling once score >= this value (e.g., 10000).")]
-    [SerializeField] private int baseScoreForScaling = 10000;
+    [SerializeField] private int baseScoreForScaling = 3000;
+    [SerializeField] private int difficultyLevel = 0;
 
     [Tooltip("Each level multiplies interval by this factor (e.g., 0.97 means 3% faster per level).")]
     [SerializeField] private float intervalMultiplierPerLevel = 0.95f;
@@ -113,8 +114,14 @@ public class EnemySpawner : MonoBehaviour
 
     private int GetDifficultyLevel(int score)
     {
-        const int pointsPerLevel = 10000;
-        return Mathf.Max(0, score / pointsPerLevel);
+        const int pointsPerLevel = 1000; // increase 1 level per 1000 points
+
+        if (score < baseScoreForScaling)   // baseScoreForScaling = 3000 in your inspector
+            return 0;
+
+        int level = (score - baseScoreForScaling) / pointsPerLevel; // integer division floors
+        difficultyLevel = level; // optional: keep this field in sync for debugging
+        return level;
     }
 
     private float GetScaledInterval(int level)
