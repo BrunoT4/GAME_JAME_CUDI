@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275729636}
   - component: {fileID: 275729635}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: grass_PNG109092_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,8 +313,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 271811001
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2444378277013561531, guid: f11711a306e6242f5a197522c6b81358, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -336,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 275729634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: -3.7, z: 0}
+  m_LocalPosition: {x: 1.5, y: -3.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []

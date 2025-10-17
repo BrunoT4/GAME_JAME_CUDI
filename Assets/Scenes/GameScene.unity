@@ -1619,7 +1619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885001628817499001, guid: 9e6a79b9346e38842bc2ad4035c4fedd, type: 3}
       propertyPath: currentHearts
-      value: 100
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

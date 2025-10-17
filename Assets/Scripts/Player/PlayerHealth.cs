@@ -106,7 +106,7 @@ public class PlayerHealth : MonoBehaviour
         {
             OnDeath?.Invoke();
             // TODO: disable controls, play death anim, reload scene, etc.
-            SceneManager.LoadScene("StartScene");
+            SceneManager.LoadScene("GameOverScene");
             return;
         }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour
@@ -10,28 +11,56 @@ public class ScoreManager : MonoBehaviour
     public int passivePoints = 1;   // Points added every few seconds
     public float interval = 2f;     // Interval in seconds
 
-    void Awake()
+    private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);  // keep across scenes
+        }
         else
+        {
             Destroy(gameObject);
+            return;
+        }
     }
 
-    void Start()
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void Start()
     {
         UpdateScoreUI();
         StartCoroutine(AddScoreOverTime());
     }
 
-    // Add points manually (e.g. for kills)
+    // 🔹 Hide the in-game score text when not in the GameScene
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scoreText == null) return;
+
+        // Show only in the main gameplay scene
+        if (scene.name == "GameScene")
+            scoreText.gameObject.SetActive(true);
+        else
+            scoreText.gameObject.SetActive(false);
+    }
+
+    // 🔹 Add points manually (for kills, pickups, etc.)
     public void AddScore(int points)
     {
         score += points;
         UpdateScoreUI();
     }
 
-    // Coroutine for automatic score increase
+    // 🔹 Automatic passive score increase
     private System.Collections.IEnumerator AddScoreOverTime()
     {
         while (true)
@@ -43,6 +72,13 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreUI()
     {
-        scoreText.text = "Score: " + score.ToString();
+        if (scoreText != null)
+            scoreText.text = "Score: " + score.ToString();
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        UpdateScoreUI();
     }
 }
