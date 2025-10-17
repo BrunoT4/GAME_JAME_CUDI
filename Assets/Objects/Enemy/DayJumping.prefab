@@ -207,7 +207,7 @@ MonoBehaviour:
   formType: 0
   disableDuringStun:
   - {fileID: 6363680626093235984}
-  zeroVelocityOnStun: 1
+  zeroVelocityOnStun: 0
 --- !u!61 &5721422510881404701
 BoxCollider2D:
   m_ObjectHideFlags: 0
